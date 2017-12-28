@@ -47,3 +47,49 @@ ab[' Guido' ] = ' guido@python. org'
 if ' Guido' in ab:
     print( "\nGuido' s address is", ab[' Guido' ] )
 print('---------------------------------------')
+#序列
+#>>> list = ['a','b','c','d','e']
+#>>> print(list[1:3])
+#['b', 'c']
+#>>> print(list[2:])
+#['c', 'd', 'e']
+#>>> print(list[1:-1])#使用负数时位置将从序列末端开始计算。
+#['b', 'c', 'd']
+#>>> print(list[2:-1])
+#['c', 'd']
+#>>> print(list[2:-2])
+#['c']
+#>>> print(list[:])
+#['a', 'b', 'c', 'd', 'e']
+print('---------------------------------------')
+#集合
+#>>> bri = set( [' brazil' , ' russia' , ' india' ] )
+#>>> ' india' in bri
+#True
+#>>> ' usa' in bri
+#False
+#>>> bric = bri. copy( )
+#>>> bric. add( ' china' )
+#>>> bric. issuperset( bri)
+#True
+#>>> bri. remove( ' russia' )
+#>>> bri & bric # OR bri. intersection( bric)
+#{' brazil' , ' india' }
+print('---------------------------------------')
+#引用
+#>>> list = ['a','b','c','d','e','f']
+#>>> mylist = list#重要，两个列表指向同一个对象，会相互影响
+#>>> del list[0]
+#>>> print(list)
+#['b', 'c', 'd', 'e', 'f']
+#>>> print(mylist)
+#['b', 'c', 'd', 'e', 'f']
+#>>> mylist = list[:]#重要，两个对象，不会相互影响
+#>>> del mylist[0]
+#>>> print(list)
+#['b', 'c', 'd', 'e', 'f']
+#>>> print(mylist)
+#['c', 'd', 'e', 'f']
+#>>> del list[0]
+#>>> print(mylist)
+#['c', 'd', 'e', 'f']
