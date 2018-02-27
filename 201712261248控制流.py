@@ -26,7 +26,7 @@ else:
     # 在这里你可以做你想做的任何事
 print( ' Done' )
 #----------------------for循环--------------------------------
-for i in range(1, 5) :#等价for i in [1,2, 3, 4]或for ( int i = 0; i < 5; i++)
+for i in range(1, 5) :#等价for i in [1,2, 3, 4]或for ( int i = 1; i < 5; i++)
     print(i)
 else:#此句可选可不选，循环结束后 开始执行， 除非程序遇到 了 break 语句 。
     print( ' The for loop is over' )
