@@ -7,6 +7,7 @@ class SchoolMember:
     def tell(self):
         print('name:"{}" age:"{}"'.format(self.name, self.age))
 
+
 class Teacher(SchoolMember):
     def __init__(self, name, age, salary):
         SchoolMember.__init__(self, name, age)
@@ -16,6 +17,7 @@ class Teacher(SchoolMember):
     def tell(self):
         SchoolMember.tell(self)
         print('salary:{}'.format(self.salary))
+
 
 t = Teacher("feng", 25, 1000)
 t.tell()
