@@ -16,5 +16,5 @@ class Person2:
         print("hello world", self.name)
 
 
-p2 = Person2("feng");
+p2 = Person2("feng")
 p2.say_hi()
