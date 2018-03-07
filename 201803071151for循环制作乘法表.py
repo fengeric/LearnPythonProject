@@ -12,6 +12,7 @@ for i in range(1, 10):
     for j in range(1, 10):
         if j >= i:
             print(str(i) + '*' + str(j) + '=' + str(i * j), end=' ')
+            # print('{} * {} = {}'.format(i, j, i * j))
     print('\n')
 print('-------------------------')
 # ---------九九乘法表(方式二)-----------------------------
@@ -20,4 +21,3 @@ for i in range(1, 10):
         if i >= j:
             print(str(j) + '*' + str(i) + '=' + str(i * j), end=' ')
     print('\n')
-
