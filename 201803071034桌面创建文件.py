@@ -1,7 +1,6 @@
-# -------------------------------------------------------------
 # --------------------创建文件-----------------------------------------
 def text_create(name, msg):
-    desktop_path = 'C:/Users/Administrator/Desktop'
+    desktop_path = 'C:/Users/Administrator/Desktop/'
     full_path = desktop_path + name + '.txt'
     file = open(full_path, 'w')
     file.write(msg)
