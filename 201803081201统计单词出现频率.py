@@ -1,7 +1,7 @@
 # 统计小王子里的单词出现频率
 import string
 
-path = 'C:/Users/Administrator/Desktop/little prince.txt'
+path = 'D:/MySpace/myCode/LearnPythonProject/little prince.txt'
 with open(path, 'r') as text:
     words = [raw_word.strip(string.punctuation).lower() for raw_word in text.read().split()]
     words_index = set(words)
