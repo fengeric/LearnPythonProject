@@ -29,3 +29,34 @@ print(weekday)
 print(weekday[:])
 print(weekday[1:4])
 
+# 利用sorted排序
+num_list = [6, 2, 7, 4, 1, 3, 5]
+print(sorted(num_list))  # 排序
+print(sorted(num_list, reverse=True))  # 反向排序
+
+# 添加元素
+arr = []
+for i in range(1, 11):
+    arr.append(i)
+print(arr)
+
+b = [i for i in range(1, 11)]  # 此方法效率更快
+print(b)
+
+# 列表类似生成方法如下
+a = [i ** 2 for i in range(1, 10)]  # 输出范围内的数的平方
+print(a)
+
+c = [j + 1 for j in range(1, 10)]  # 在取值范围内加1输出
+print(c)
+
+k = [n for n in range(1, 10) if n % 2 == 0]  # 取出范围内的偶数
+print(k)
+
+z = [letter.lower() for letter in 'ABCDEFGHIJKLMN']
+print(z)
+
+# 获取元素索引下标
+lett = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+for num, letter in enumerate(lett):
+    print(letter, 'is', num)
